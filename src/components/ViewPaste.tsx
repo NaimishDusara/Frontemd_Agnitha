@@ -274,7 +274,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { apiService } from '../api/paste';
 import type { PasteData } from '../types/Paste';
 import { formatTimeRemaining, copyToClipboard } from '../utils/validators';
-import { ErrorMessage } from './ErrorMessage';
 
 export const ViewPaste = () => {
   const { id } = useParams<{ id: string }>();
