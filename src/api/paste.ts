@@ -5,7 +5,7 @@ import type {
   ApiError,
 } from '../types/Paste';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://backendagnitha-production.up.railway.app';
 
 class ApiService {
   private async handleResponse<T>(response: Response): Promise<T> {
